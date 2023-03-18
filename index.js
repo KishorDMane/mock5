@@ -13,7 +13,7 @@ const {flightRouter}=require("./router/flight.router")
 const {BookingRouter}=require("./router/Booking.router")
 const {dashboardRouter}=require("./router/dashborde.router")
 app.use(express.json())
-app.get("/server",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send("server is wirking")
 })
 app.use("/api/register",signupRouter)
